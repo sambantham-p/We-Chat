@@ -15,7 +15,7 @@ if nickname == 'admin':
 
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
  #connecting client to server   
-client.connect(('127.0.0.1', 55555))                            
+client.connect((socket.gethostname(), 55555))                            
 
 #boolean global variable
 stop_thread = False
