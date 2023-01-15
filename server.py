@@ -8,7 +8,7 @@ Created on Tue May 10 20:08:28 2022
 import socket
 import threading                                               
 
-host = '127.0.0.1'                                                      
+host = socket.gethostname()                                                      
 port = 55555                                                          
 
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
